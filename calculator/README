@@ -1,0 +1,11 @@
+Calculator using flex and bison
+
+how to compile:
+
+bison -v -d --file-prefix=y calc.y
+
+flex calc.lex
+
+gcc -o calc y.tab.c lex.yy.c -lfl
+
+run calc or specify a filename
