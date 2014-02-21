@@ -1,0 +1,13 @@
+Lexical Analyzer for MINI-L Language
+
+HOW TO CREATE EXECUTABLE: 
+
+execute command: flex mini_l.lex
+then execute command: gcc -o lexer lex.yy.c -lfl
+this will create an executable named lexer
+
+TO RUN:
+
+execute command: lexer
+if you have a file, execute : cat "filename" | lexer
+						  ie: cat primes.min | lexer
